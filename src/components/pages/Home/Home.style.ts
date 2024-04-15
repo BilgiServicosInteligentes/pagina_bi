@@ -9,24 +9,17 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   ${props => css`
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #333;
+    justify-content: center;
 
-    .container {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
     ${props.isMobile && css``}
   `}
 `
 
 export const Content = styled.div`
-  z-index: 2;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -36,5 +29,33 @@ export const Content = styled.div`
   .bi {
     width: 1000px;
     height: 654px;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1035px) {
+    .bi {
+      width: 760px;
+      height: 511px;
+    }
+  }
+  @media (max-width: 768px) {
+    .bi {
+      width: 500px;
+      height: 357px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .bi {
+      width: 350px;
+      height: 268px;
+    }
   }
 `
