@@ -34,7 +34,7 @@ export const Content = styled.div`
   justify-content: center;
 
   .bi {
-    width: 1078px;
-    height: 700px;
+    width: 1000px;
+    height: 654px;
   }
 `
