@@ -29,6 +29,12 @@ export const Content = styled.div`
   .bi {
     width: 1000px;
     height: 654px;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% calc(100% - 36px),
+      0% calc(100% - 36px)
+    );
   }
 
   .container {

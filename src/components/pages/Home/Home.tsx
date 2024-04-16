@@ -17,6 +17,7 @@ export function HomePage() {
         <S.Content>
           <div className="Container">
             <iframe
+              allowFullScreen={true}
               className="bi"
               title="Dashboard Demo Dark"
               width="600"
